@@ -1,0 +1,60 @@
+{
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Fix the footer links please",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "low",
+      "user_email": "mario@netninja.dev"
+    },
+    {
+      "id": "2",
+      "title": "Add in a new stylesheet",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "medium",
+      "user_email": "mario@netninja.dev"
+    },
+    {
+      "id": "3",
+      "title": "Fix the footer links",
+      "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
+      "priority": "high",
+      "user_email": "peach@netninja.dev"
+    },
+    {
+      "id": "f388",
+      "title": "Hihihi",
+      "body": "They make writing a React application feel similar to PHP or Ruby on Rails, but with the power and flexibility of React for templating UI.",
+      "priority": "low",
+      "user_email": "mario@gmail.com"
+    },
+    {
+      "id": "f58c",
+      "title": "ddnfkadsf",
+      "body": "io\n      <Link href=\"/tickets/create\">Create ticket</Link>",
+      "priority": "high",
+      "user_email": "mario@gmail.com"
+    },
+    {
+      "id": "93cb",
+      "title": "ojefolsdn",
+      "body": "\n      <Link href=\"/tickets/create\">Create ticket</Link>",
+      "priority": "high",
+      "user_email": "mario@gmail.com"
+    },
+    {
+      "id": "52fa",
+      "title": "wertyuikm",
+      "body": "fghjkmnbgyuknbhj",
+      "priority": "low",
+      "user_email": "mario@gmail.com"
+    },
+    {
+      "id": "db0f",
+      "title": "ndnidfofwe",
+      "body": "In the new app directory, by default, Next.js uses Server Components, where the JSX gets compiled to \"pure HTML\" and sent to the browser. Like any traditional Backend with a templating engine, such as Express with EJS or Laravel with Blade. This is for better performance, as you can read on the doc:\n\nServer Components allow developers to better leverage server infrastructure. For example, large dependencies that previously would impact the JavaScript bundle size on the client can instead remain entirely on the server, leading to improved performance. They make writing a React application feel similar to PHP or Ruby on Rails, but with the power and flexibility of React for templating UI.\n\nAnd a Server Component shouldn't contain browser-specific things like click handlers or hooks such as useState.",
+      "priority": "medium",
+      "user_email": "mario@gmail.com"
+    }
+  ]
+}

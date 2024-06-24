@@ -1,0 +1,56 @@
+// "use client";
+
+import React from "react";
+import Link from "next/link";
+// import { useRouter } from "next/navigation";
+
+async function getTickets() {
+  //imitate delay
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  const res = await fetch("http://localhost:4000/tickets", {
+    next: {
+      revalidate: 10, // 10 seconds, if set as 0, it will not cache data, fetch everytime it is called
+    },
+  });
+  return res.json();
+}
+
+export default async function TicketList() {
+  const tickets = await getTickets();
+  // const router = useRouter();
+
+  // const handleClick = async (e) => {
+  //   e.preventDefault();
+  //   const res = await fetch("http://localhost:4000/tickets", {
+  //     method: "DELETE",
+  //   });
+
+  //   if (res.status === 201) {
+  //     router.refresh();
+  //   }
+  // };
+
+  return (
+    <div>
+      {tickets.map((ticket: any) => (
+        <div key={ticket.id} className="card my-5">
+          <Link href={`/tickets/${ticket.id}`}>
+            <h3>{ticket.title}</h3>
+            <p>{ticket.body.slice(0, 200)} ...</p>
+            <div className={`pill ${ticket.priority}`}>
+              {ticket.priority} prority
+            </div>
+          </Link>
+        </div>
+      ))}
+      {tickets.length === 0 && (
+        <p className="text-center"> There is no open tickets!</p>
+      )}
+      {/* 
+      <button className="btn btn-primary" onClick={handleClick}>
+        Delete
+      </button> */}
+    </div>
+  );
+}

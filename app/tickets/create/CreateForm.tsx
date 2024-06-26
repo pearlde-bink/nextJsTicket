@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function CreateForm() {
   const [title, setTitle] = useState("");

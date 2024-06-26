@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
 import React from "react";
+import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:4000/tickets");
@@ -12,8 +12,6 @@ export async function generateStaticParams() {
 }
 
 async function getTicket(id: any) {
-  await new Promise((resolve) => setTimeout(resolve, 3000)); //delay to see loading screen
-
   const res = await fetch("http://localhost:4000/tickets/" + id, {
     next: {
       revalidate: 60,
